@@ -15,13 +15,18 @@
             foundATruck = foundATruck || p.className.includes("truck")
           })
           // TRUCK ALERT!
-          if (foundATruck) alert("TRUCK DETECTED!")
+          if (foundATruck) {
+            alert("TRUCK DETECTED!");
+          } else {
+            alert("No truck detected");
+          }
         });
       });
     </script>
   </head>
   <body>
     <h1>Is this a truck?</h1>
+    <!-- REPLACE FILE NAME AND RUN A LOCAL SERVER. -->
     <img id="myImage" src="truck.jpg" width="100%"></img>
   </body>
 </html>
